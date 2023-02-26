@@ -34,12 +34,31 @@
   right: 90px;
   transform: scale(-1, 1);
 }
-@media only screen and (max-width: 600px) {
-  .left {
-    right: 70px;
-  }
-}
 
 .right {
   right: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    display: none;
+  }
+
+  .scrollDots {
+    text-align: center;
+  }
+
+  .scrollDot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+
+  .scrollDotActive {
+    background-color: #2e2d2d;
+  }
 }
