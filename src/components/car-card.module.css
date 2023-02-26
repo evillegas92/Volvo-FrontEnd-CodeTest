@@ -1,0 +1,18 @@
+.card {
+  margin: 1px 10px;
+}
+
+.cardLinks {
+    text-align: center;
+}
+
+.cardLink {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.subtitle {
+    font-family: Volvo Novum, Arial, sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.56);
+}

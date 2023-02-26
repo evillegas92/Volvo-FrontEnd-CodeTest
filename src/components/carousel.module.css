@@ -1,0 +1,45 @@
+.carouselCover {
+  padding: 0px 30px;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+}
+
+.carouseContainer {
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carouseContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.btn {
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  top: 100%;
+}
+.btn svg {
+  width: 25px;
+  height: 25px;
+}
+
+.left {
+  right: 90px;
+  transform: scale(-1, 1);
+}
+@media only screen and (max-width: 600px) {
+  .left {
+    right: 70px;
+  }
+}
+
+.right {
+  right: 3%;
+}
