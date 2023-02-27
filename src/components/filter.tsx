@@ -27,7 +27,7 @@ export const Filter = ({
   return (
     <div className={styles.filterContainer}>
       {uniqueValues.map((option) => (
-        <a
+        <button
           onClick={handleClick.bind(this, option.id)}
           key={option.id}
           className={`${styles.filterOption} ${
@@ -35,7 +35,7 @@ export const Filter = ({
           }`}
         >
           {option.value}
-        </a>
+        </button>
       ))}
     </div>
   );

@@ -65,7 +65,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
       <div ref={carouselRef} className={styles.carouseContainer}>
         {children}
       </div>
-      <span onClick={scrollLeft} className={`${styles.left} ${styles.btn}`}>
+      <button onClick={scrollLeft} className={`${styles.left} ${styles.btn}`}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
           <circle
             cx="20"
@@ -98,8 +98,8 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
             strokeWidth="1"
           ></rect>
         </svg>
-      </span>
-      <span onClick={scrollRight} className={`${styles.right} ${styles.btn}`}>
+      </button>
+      <button onClick={scrollRight} className={`${styles.right} ${styles.btn}`}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
           <circle
             cx="20"
@@ -132,7 +132,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
             strokeWidth="1"
           ></rect>
         </svg>
-      </span>
+      </button>
       <div className={styles.scrollDots}>{renderDots()}</div>
     </div>
   );

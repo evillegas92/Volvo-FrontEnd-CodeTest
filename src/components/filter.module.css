@@ -9,6 +9,8 @@
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
+    border: 0;
+    background-color: transparent;
 }
 
 .selected {
