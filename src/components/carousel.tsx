@@ -2,7 +2,7 @@ import React from "react";
 import { useRef, useEffect, useState } from "react";
 import styles from "./carousel.module.css";
 
-const carCardWidth: number = 290;
+const carCardWidth: number = 265;
 
 const determineDotIsActive = (
   scrollPos: number,

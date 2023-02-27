@@ -1,0 +1,17 @@
+.filterContainer {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.filterOption {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
