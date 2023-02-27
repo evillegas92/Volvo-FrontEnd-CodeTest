@@ -7,7 +7,7 @@ export default function Home() {
       <main>
         <h1 className={styles.title}>Welcome to Volvo Cars</h1>
         <p>
-          <Link href="/products">See cars</Link>
+          <Link href="/products">See latest recharge cars</Link>
         </p>
       </main>
       <footer className={styles.footer}></footer>

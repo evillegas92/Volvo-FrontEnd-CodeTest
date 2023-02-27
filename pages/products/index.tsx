@@ -6,6 +6,7 @@ import { CarCard } from "src/components/car-card";
 import { Filter } from "src/components/filter";
 import { FilterOption } from "src/shared/filter-option";
 import { useState } from "react";
+import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = () => {
   const cars: Car[] = getCars();
@@ -25,7 +26,6 @@ export default function Products({ cars }: { cars: Car[] }) {
         setFilteredCars(cars);
         return;
     }
-    console.log(`selected value: ${bodyTypeSelected}`);
     const filteredResult: Car[] = cars.filter(car => car.bodyType === bodyTypeSelected);
     setFilteredCars(filteredResult);
   };
@@ -40,6 +40,9 @@ export default function Products({ cars }: { cars: Car[] }) {
           <CarCard car={car} key={car.id} />
         ))}
       </Carousel>
+      <p>
+        <Link href={"/"}>Back home</Link>
+      </p>
     </>
   );
 }
