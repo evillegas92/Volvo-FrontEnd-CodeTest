@@ -1,18 +1,19 @@
 import { Car } from "src/shared/car";
 import Image from "next/image";
 import styles from "./car-card.module.css";
+import { Spacer } from "vcc-ui/dist/components";
 
 export const CarCard = ({ car }: { car: Car }) => {
   return (
     <div className={styles.card}>
       <span className={styles.subtitle}>{car.bodyType}</span>
-      <br />
+      <Spacer />
       <strong>{car.modelName}</strong>
-      <br />
+      <Spacer />
       {car.modelType}
-      <br />
+      <Spacer />
       <Image src={car.imageUrl} alt={car.modelName} width={290} height={220} />
-      <br />
+      <Spacer />
       <div className={styles.cardLinks}>
         <a href={`/learn/${car.id}`} className={styles.cardLink}>
           LEARN &#62;

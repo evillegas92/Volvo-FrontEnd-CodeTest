@@ -6,9 +6,9 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>Welcome to Volvo Cars</h1>
-        <p>
+        <h3>
           <Link href="/products">See latest recharge cars</Link>
-        </p>
+        </h3>
       </main>
       <footer className={styles.footer}></footer>
     </div>
